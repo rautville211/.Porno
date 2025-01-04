@@ -65,3 +65,16 @@
     </div>
 </body>
 </html>
+server {
+    listen 80;
+    server_name your_domain.com;
+
+    location / {
+        root /path/to/project-folder;
+        index index.html;
+    }
+
+    location /images/ {
+        root /path/to/project-folder;
+    }
+}
